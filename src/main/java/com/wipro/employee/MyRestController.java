@@ -1,4 +1,4 @@
-package com.wipro.controller;
+package com.wipro.employee;
 
 import java.util.*;
 
@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 //import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.wipro.bean.Employee;
-import com.wipro.repository.EmployeeRepo;
 
 @RestController
 public class MyRestController {

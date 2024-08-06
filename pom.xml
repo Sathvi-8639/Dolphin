@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wipro</groupId>
-	<artifactId>WEE-EMPLOYEE-REST</artifactId>
+	<artifactId>pack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>WEE-EMPLOYEE-REST</name>
 	<description>Demo project for Spring Boot</description>

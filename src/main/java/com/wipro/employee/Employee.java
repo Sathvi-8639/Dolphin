@@ -1,4 +1,4 @@
-package com.wipro.bean;
+package com.wipro.employee;
 
 import jakarta.persistence.*;
 
