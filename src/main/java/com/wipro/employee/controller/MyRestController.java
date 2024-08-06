@@ -1,15 +1,16 @@
-package com.wipro.controller;
+package com.wipro.employee.controller;
 
-import java.util.*;
 
+import com.wipro.employee.bean.Employee;
+import com.wipro.employee.repository.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-//import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wipro.bean.Employee;
-import com.wipro.repository.EmployeeRepo;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 @RestController
 public class MyRestController {
@@ -20,7 +21,7 @@ public class MyRestController {
 	@GetMapping(path="/Employees")
 	public List<Employee> allEmployees(){
 		ArrayList<Employee> list=new ArrayList<Employee>();
-		Iterator<Employee> it=repo.findAll().iterator();
+		Iterator<Employee> it = repo.findAll().iterator();
 		while(it.hasNext()) {
 			list.add(it.next());
 		}
